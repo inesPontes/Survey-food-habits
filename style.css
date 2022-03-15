@@ -88,3 +88,36 @@ form {
   background: rgb(255, 255, 255, 0.8);
   border-radius: 0.25rem;
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+  #description {
+    font-size: 15px;
+    padding: 5px;
+    max-width: 100%;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form-control {
+    font-size: 10px;
+  }
+
+  #submit {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
