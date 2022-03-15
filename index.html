@@ -8,5 +8,183 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+<div class="container">
+<header class="header">
+<h1 id="title">Food Habits Survey</h1>
+<p id="description">Help us understand the different eating habits around the world 🍝<p>
+  </header>
+<div class="form">
+  
+    <form id="survey-form">
+      <p>Personal Information</p>
+      <label id="name-label" for="name">Name:</label>
+      <br>
+      <input 
+             type="text" 
+             id="name"
+             placeholder="Enter your name"
+             class="form-control"
+             required>
+      <br>
+      <label id="email-label" for="email">E-mail:</label>
+      <br>
+      <input type="email" 
+             id="email" 
+             class="form-control"
+             placeholder="Enter your e-mail"
+             required><br>
+      
+      <label id="number-label" for="number">Age</label>
+        <br>
+      <input type="number" 
+             id="number" 
+             class="form-control"
+             placeholder="Enter your age"
+             min="10"
+             max="100">
+      
+       <label id="country-label" for="country">Country:</label>
+      <br>
+      <input 
+             type="text" 
+             id="country"
+             placeholder="Enter your country"
+             class="form-control"
+             required>
+      
+      <p>What is the highest degree or level of school you have completed?</p>
+      <select type="dropdown"
+             class="form-control"
+             id="dropdown">
+             <option disabled selected value> Select current role</option>
+        <option value="nodegree">No degree</option>
+        <option value="highschool">High School</option>
+        <option value="bachelor">Bachelor degree</option>
+        <option value="master">Master Degree</option>
+        <option value="phd">Ph.D</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <p>
+        Which one best describes your current situation?
+        <span class="food-regime"></span>
+      </p>
+
+      <label
+        ><input
+          name="diet"
+          value="Vegan"
+          type="radio"
+          class="diet"
+        />Vegan</label
+      >
+      <br>
+      <label>
+        <input
+          name="diet"
+          value="Vegetarian"
+          type="radio"
+          class="diet"
+        />Vegetarian</label
+      ><br>
+      <label
+        ><input
+          name="diet"
+          value="Lacto-ovo-vegetarian"
+          type="radio"
+          class="diet"
+        />Lacto-ovo-vegetarian</label
+      
+      ><br>
+      <label
+        ><input
+          name="diet"
+          value="Flexitarian"
+          type="radio"
+          class="diet"
+        />Flexitarian</label
+      >
+     <br>
+      <label
+        ><input
+          name="diet"
+          value="No restrictions"
+          type="radio"
+          class="diet"
+        />No restrictions</label
+      ><br>
+      <label
+        ><input
+          name="diet"
+          value="Other"
+          type="radio"
+          class="diet"
+        />Other</label
+      >
+      
+       <p>
+        Select all the foods you consume daily:
+        <span class="selector"></span>
+      </p>
+
+      <label
+        ><input
+          name="foods"
+          value="vegetable"
+          type="checkbox"
+          class="input-checkbox"
+        />Vegetables</label
+      >
+      <br>
+      
+      <label
+        ><input
+          name="foods"
+          value="fruit"
+          type="checkbox"
+          class="input-checkbox"
+        />Fruit</label
+      > <br>
+      <label
+        ><input
+          name="foods"
+          value="Alcoho"
+          type="checkbox"
+          class="input-checkbox"
+        />Alcohol</label
+      > <br>
+      <label
+        ><input
+          name="foods"
+          value="Coffee"
+          type="checkbox"
+          class="input-checkbox"
+        />Coffee</label
+      > <br>
+      <label
+        ><input
+          name="foods"
+          value="Nuts"
+          type="checkbox"
+          class="input-checkbox"
+        />Nuts</label
+      >
+      
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea form-control"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        <strong>Submit</strong>
+      </button>
+      </div>
+  </div>
+
+  </body>
 </html>
